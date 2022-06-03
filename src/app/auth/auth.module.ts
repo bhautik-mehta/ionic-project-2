@@ -7,12 +7,14 @@ import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
 import { ChooseComponent } from './choose/choose.component';
 import { SharedAuthModule, UiSharedModule } from 'Shared/dist';
+import { ShowimgComponent } from './showimg/showimg.component';
 
 @NgModule({
   declarations: [
     SigninComponent,
     SignupComponent,
-    ChooseComponent
+    ChooseComponent,
+    ShowimgComponent
   ],
   imports: [
     CommonModule,
@@ -26,7 +28,8 @@ import { SharedAuthModule, UiSharedModule } from 'Shared/dist';
   exports: [
     SigninComponent,
     SignupComponent,
-    ChooseComponent
+    ChooseComponent,
+    ShowimgComponent
   ]
 })
 export class AuthModule { }

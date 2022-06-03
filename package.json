@@ -21,7 +21,7 @@
     "@angular/router": "~13.2.2",
     "@ionic/angular": "^6.0.0",
     "rxjs": "~6.6.0",
-    "Shared": "github:mi11dc/shared-project-package#main",
+    "Shared": "github:bhautik-mehta/shared-project#main",
     "tslib": "^2.2.0",
     "zone.js": "~0.11.4"
   },

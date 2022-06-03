@@ -15,15 +15,18 @@ export class ChooseComponent implements OnInit {
     private router: Router
   ) { }
 
-  ngOnInit() {}
+  ngOnInit() { }
 
   onBtnClick(data) {
-    switch(data) {
+    switch (data) {
       case 0:
         this.router.navigate(['/auth/signup']);
         break;
       case 1:
         this.router.navigate(['/auth/login']);
+        break;
+      case 4:
+        this.router.navigate(['/auth/show-img']);
         break;
     }
   }

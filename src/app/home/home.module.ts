@@ -8,8 +8,6 @@ import { HomePageRoutingModule } from './home-routing.module';
 import { HomeService } from './_services/home.service';
 import { AddPolicyComponent } from './add-policy/add-policy.component';
 import { EditPolicyComponent } from './edit-policy/edit-policy.component';
-import { environment } from 'src/environments/environment';
-
 import { AngularFireModule } from "@angular/fire/compat";
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { UiSharedModule } from 'Shared/dist';
@@ -23,7 +21,7 @@ import { UiSharedModule } from 'Shared/dist';
     IonicModule,
     HomePageRoutingModule,
 
-    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireModule,
     AngularFireDatabaseModule,
 
     UiSharedModule
@@ -41,4 +39,4 @@ import { UiSharedModule } from 'Shared/dist';
     HomeService
   ]
 })
-export class HomePageModule {}
+export class HomePageModule { }

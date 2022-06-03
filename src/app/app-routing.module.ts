@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { ShowimgComponent } from './auth/showimg/showimg.component';
 import { AuthGuard } from './_guards/auth.guard';
 import { LoginGuard } from './_guards/login.guard';
 
@@ -12,7 +13,11 @@ const routes: Routes = [
   {
     path: 'home',
     canActivate: [AuthGuard],
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
+  },
+  {
+    path: 'show-img',
+    component: ShowimgComponent
   },
   {
     path: '',
